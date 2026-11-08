@@ -1,0 +1,26 @@
+{
+  "name": "taskflow-pro",
+  "version": "1.0.0",
+  "description": "Production-Grade Full-Stack Task Management Application (TaskFlow Pro)",
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "seed": "npm --prefix backend run seed",
+    "seed:destroy": "npm --prefix backend run seed:destroy",
+    "start:backend": "npm --prefix backend start",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview"
+  },
+  "keywords": [
+    "task-management",
+    "fullstack",
+    "react",
+    "express",
+    "mongodb",
+    "kanban",
+    "tailwind"
+  ],
+  "author": "TaskFlow Pro Team",
+  "license": "MIT"
+}
