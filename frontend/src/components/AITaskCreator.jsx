@@ -147,6 +147,7 @@ const AITaskCreator = () => {
                 setPrompt('');
                 setParsedPreview(null);
               }}
+              aria-label="Clear prompt"
               className="absolute right-3 top-1/2 -translate-y-1/2 text-indigo-200/60 hover:text-white"
             >
               <X className="h-4 w-4" />

@@ -110,12 +110,13 @@ const Register = ({ onSwitchToLogin }) => {
 
           <form onSubmit={handleSubmit} className="space-y-3.5">
             <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
+              <label htmlFor="reg-name" className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
                 Full Name
               </label>
               <div className="relative">
                 <UserIcon className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
                 <input
+                  id="reg-name"
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -126,12 +127,13 @@ const Register = ({ onSwitchToLogin }) => {
             </div>
 
             <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
+              <label htmlFor="reg-email" className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
                 Email Address
               </label>
               <div className="relative">
                 <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
                 <input
+                  id="reg-email"
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -142,12 +144,13 @@ const Register = ({ onSwitchToLogin }) => {
             </div>
 
             <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
+              <label htmlFor="reg-password" className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
                 Password
               </label>
               <div className="relative">
                 <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
                 <input
+                  id="reg-password"
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -158,12 +161,13 @@ const Register = ({ onSwitchToLogin }) => {
             </div>
 
             <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
+              <label htmlFor="reg-confirm-password" className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
                 Confirm Password
               </label>
               <div className="relative">
                 <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
                 <input
+                  id="reg-confirm-password"
                   type="password"
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}

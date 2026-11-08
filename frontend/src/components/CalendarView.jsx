@@ -106,6 +106,7 @@ const CalendarView = ({ onEditTask, onOpenCreateForDate }) => {
               onClick={prevMonth}
               className="p-1.5 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-white transition-colors"
               title="Previous month"
+              aria-label="Previous month"
             >
               <ChevronLeft className="h-4 w-4" />
             </button>
@@ -113,6 +114,7 @@ const CalendarView = ({ onEditTask, onOpenCreateForDate }) => {
               onClick={nextMonth}
               className="p-1.5 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-white transition-colors"
               title="Next month"
+              aria-label="Next month"
             >
               <ChevronRight className="h-4 w-4" />
             </button>
